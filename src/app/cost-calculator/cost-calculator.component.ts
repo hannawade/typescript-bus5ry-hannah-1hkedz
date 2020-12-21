@@ -4,6 +4,8 @@ import { Component, OnInit, Input } from "@angular/core";
 //If the customer parks for less than 10 minutes, parking is free. If they're parked for 10 minutes to 2 hours,
 //they will be charged $3. For every half hour after the first 2 hours, they will be charge $.75.
 
+//TODO: Add some extra error handling when passed anything besides a number, add clear button
+
 @Component({
   selector: "app-cost-calculator",
   templateUrl: "./cost-calculator.component.html",
