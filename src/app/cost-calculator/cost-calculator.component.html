@@ -1,0 +1,11 @@
+<label for="mins">Minutes parked: </label>
+<input #mins type="text" id="mins" /><br /><br />
+<input
+  type="submit"
+  (click)="onCalculate(mins.value)"
+  value="Calculate Cost"
+  class="btn btn-primary"
+/>
+<div>
+  {{ totalCost }}
+</div>
